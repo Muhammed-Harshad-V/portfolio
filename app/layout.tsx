@@ -1,3 +1,4 @@
+import { GlobalProvider } from './(root)/(context)/GlobalProvider';
 import './globals.css'; // Import global styles
 import type { Metadata } from 'next'
  
@@ -9,9 +10,11 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html>
+      <GlobalProvider>
       <body className='bg-retroBlack'>
         {children}
       </body>
+      </GlobalProvider>
     </html>
   )
 }

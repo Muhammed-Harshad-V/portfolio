@@ -31,6 +31,12 @@ export default {
           retroPurple: "#9370DB", // Warm, muted purple
           retroMint: "#98FF98",   // Fresh, retro mint green
       },
+      screens: {
+        'sm': '300px',  // Adding a custom breakpoint
+        'md': '480px',  // Changing the 'md' breakpoint to 800px
+        'lg': '768px',
+        'xl': '1024px',
+      },
     },
   },
   plugins: [],
