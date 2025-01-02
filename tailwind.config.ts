@@ -8,8 +8,28 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'primary': ['Bebas Neue'],
+        'secondary': ['Open Sans', 'sans-serif'],
+      },
       colors: {
-        White: "#F9F9F9",
+          // Core Retro Palette
+          retroBlack: "#0e0d0d",
+          retroGold: "#D4AF37",
+          retroGreen: "#62f00c",
+          retroWhite: "#F5F5DC",
+          silver: '#C0C0C0',
+          retroOrange: "#FF7F50", // Warm and vibrant
+          retroTeal: "#4682B4",   // Calm and cool
+          retroRed: "#CD5C5C",    // Muted red with vintage vibes
+          retroBlue: "#5F9EA0",   // Soft blue, adds elegance
+          retroYellow: "#FFD700", // Bright, retro pop
+          retroPink: "#D87093",   // Subtle pink for softer accents
+          retroBrown: "#8B4513",  // Rich brown for grounded elements
+          retroBeige: "#F5F5DC",  // Neutral for balance
+          retroGrey: "#696969",   // Vintage muted grey
+          retroPurple: "#9370DB", // Warm, muted purple
+          retroMint: "#98FF98",   // Fresh, retro mint green
       },
     },
   },

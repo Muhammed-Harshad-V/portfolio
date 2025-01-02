@@ -1,15 +1,17 @@
 import './globals.css'; // Import global styles
-import Navbar from './components/navbar/navbar';
-import LoadingScreen from './components/home/loadingScreen';
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'harshad',
+  description: 'portfolio websiite of harshad',
+}
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en">
-      <body>
-        <LoadingScreen />
-        <Navbar />
+    <html>
+      <body className='bg-retroBlack'>
         {children}
       </body>
     </html>
-  );
+  )
 }
