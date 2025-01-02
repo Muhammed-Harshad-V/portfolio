@@ -2,30 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* styles/typingEffect.css */
 
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  
-  .typing-effect {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid; /* Cursor effect */
-    animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
-  }
-  
+.grid-background {
+  position: relative;
+}
+
+.grid-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 50px,
+    rgba(255, 255, 255, 0.1) 50px,
+    rgba(255, 255, 255, 0.1) 51px,
+    transparent 51px
+  ),
+  repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 50px,
+    rgba(255, 255, 255, 0.1) 50px,
+    rgba(255, 255, 255, 0.1) 51px,
+    transparent 51px
+  );
+  pointer-events: none; /* Allows clicks to pass through */
+}
