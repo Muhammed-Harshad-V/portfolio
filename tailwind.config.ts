@@ -9,12 +9,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'primary': ['Bebas Neue'],
-        'secondary': ['Open Sans', 'sans-serif'],
+        'primary': ['var(--font-Bebas Neue)'],
       },
       colors: {
           // Core Retro Palette
-          retroBlack: "#0e0d0d",
+          retroBlack: "#0a0a09",
           retroGold: "#D4AF37",
           retroGreen: "#62f00c",
           retroWhite: "#F5F5DC",
