@@ -19,19 +19,20 @@
   background: repeating-linear-gradient(
     0deg,
     transparent,
-    transparent 50px,
-    rgba(255, 255, 255, 0.1) 50px,
-    rgba(255, 255, 255, 0.1) 51px,
-    transparent 51px
+    transparent 80px, /* Increased from 50px to 100px */
+    rgba(255, 255, 255, 0.1) 80px,
+    rgba(255, 255, 255, 0.1) 81px,
+    transparent 81px
   ),
   repeating-linear-gradient(
     90deg,
     transparent,
-    transparent 50px,
-    rgba(255, 255, 255, 0.1) 50px,
-    rgba(255, 255, 255, 0.1) 51px,
-    transparent 51px
+    transparent 80px, /* Increased from 50px to 100px */
+    rgba(255, 255, 255, 0.1) 80px,
+    rgba(255, 255, 255, 0.1) 81px,
+    transparent 81px
   );
   pointer-events: none; /* Allows clicks to pass through */
 }
+
 

@@ -28,7 +28,6 @@ export default {
   			retroYellow: '#FFD700',
   			retroPink: '#D87093',
   			retroBrown: '#8B4513',
-  			retroBeige: '#F5F5DC',
   			retroGrey: '#696969',
   			retroPurple: '#9370DB',
   			retroMint: '#98FF98',
