@@ -1,30 +1,31 @@
 import React from "react";
-import { cn } from "../../../@/lib/utils";// Adjusted import path
-import AnimatedGridPattern from "../../../components/ui/animated-grid-pattern";
+import ShineBorder from "../../../@/components/ui/shine-border";
 
-export function AnimatedGridPatternDemo() {
-  return (
-       <AnimatedGridPattern
-        numSquares={100}
-        maxOpacity={10} // Adjust this for visibility
-        duration={1}
-        repeatDelay={2}
-        className={cn(
-          "",
-
-          "bg-red-400"
-        )}
-      />
-  );
-}
 
 export default function Home() {
   return (
     <>
-      <div className="w-full h-screen overflow-hidden sm:p-5 md:p-8 lg:p-12 bg-white">
-        <div className="flex justify-center text-center">
-        <AnimatedGridPattern />
-          <div className="sm:mt-[40px] md:mt-[70px] lg:mt-[100px] xl:mt-[120px] border-2 font-mono border-[#9370DB] sm:p-5 lg:p-8 xl:p-10 rounded-[20px] bg-[#000000] z-10 drop-shadow-purpleGlow">
+      <div className="w-full h-screen overflow-hidden sm:p-5 md:p-8 lg:p-12 grid-background">
+        <div className="flex justify-center text-center sm:mt-[40px] md:mt-[70px] lg:mt-[80px] xl:mt-[100px]">
+          <ShineBorder
+           color={[
+            '#D4AF37', // retroGold
+            '#62f00c', // retroGreen
+            '#F5F5DC', // retroWhite
+            '#C0C0C0', // silver
+            '#f78605', // retroOrange
+            '#4682B4', // retroTeal
+            '#CD5C5C', // retroRed
+            '#5F9EA0', // retroBlue
+            '#FFD700', // retroYellow
+            '#D87093', // retroPink
+            '#8B4513', // retroBrown
+            '#F5F5DC', // retroBeige
+            '#696969', // retroGrey
+            '#9370DB', // retroPurple
+          ]}
+          >
+          <div className="font-mono sm:p-5 lg:p-8 xl:p-10 rounded-[30px] bg-[#000000] z-20">
             <h1 className="sm:text-3xl xl:text-4xl font-bold mb-4">
               <span className="text-[#FFD700]">Hello,</span> {/* Retro Gold */}
               <span className="text-[#62f00c]"> I'm </span> {/* Retro Green */}
@@ -48,6 +49,7 @@ export default function Home() {
               <span className="text-[#9370DB]"> Let's collaborate!</span> {/* Retro Purple */}
             </p>
           </div>
+          </ShineBorder>
         </div>
       </div>
     </>
