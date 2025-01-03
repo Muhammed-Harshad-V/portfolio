@@ -11,7 +11,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html>
       <GlobalProvider>
-      <body className='bg-retroBlack'>
+      <body>
         {children}
       </body>
       </GlobalProvider>
