@@ -36,3 +36,45 @@
 }
 
 
+/* styles.css or your CSS file */
+@keyframes fadeInAndOutLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}
+
+@keyframes fadeInAndOutRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.fade-in-out-left {
+  animation: fadeInAndOutLeft 3s ease forwards; /* Animation duration and easing */
+}
+
+.fade-in-out-right {
+  animation: fadeInAndOutRight 3s ease forwards; /* Animation duration and easing */
+}
+
+
+
+
