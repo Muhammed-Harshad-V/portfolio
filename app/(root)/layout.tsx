@@ -2,17 +2,17 @@
 import React from 'react'
 import Navbar from '../components/navbar/navbar';
 import Footer from '../components/footer/footer'
-import LoadingScreen from './(home)/loadingScreen'
-import { useGlobal } from './(context)/GlobalProvider'
+// import LoadingScreen from './(home)/loadingScreen'
+// import { useGlobal } from './(context)/GlobalProvider'
 
 export default function HomeLayout({children}: {children: React.ReactNode}) {
-    const {isLoading} = useGlobal(); 
+    // const {isLoading} = useGlobal(); 
 
     return (
       <>
-           <LoadingScreen/>
+           {/* <LoadingScreen/> */}
         <div
-         className={`${isLoading ? 'hidden' : 'block'}`}
+        //  className={`${isLoading ? 'hidden' : 'block'}`}
          >
             <Navbar/>
           {children}
