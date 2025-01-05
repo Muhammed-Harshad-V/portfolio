@@ -1,6 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-import githubIcon from '';
 
 
 
@@ -46,7 +46,7 @@ const Home = () => {
 
           {/* {what i use} */}
 
-          <div className="w-full bg-black rounded-t-3xl border-t-2 border-t-retroWhite drop-shadow-purpleGlow font-mono sm:pr-5 lg:pr-8 xl:pr-10 sm:pl-5 lg:pl-8 xl:pl-10">
+          <div className="w-full bg-black rounded-t-3xl border-t-2 border-t-retroWhite font-mono sm:pr-5 lg:pr-8 xl:pr-10 sm:pl-5 lg:pl-8 xl:pl-10">
               <h2 className='text-retroOrange sm:text-[20px] lg:text-[25px] font-bold sm:ml-[30px] sm:mt-[30px] md:ml-[40px] lg:ml-[60px] lg:mt-[40px] xl:mt-[50px] mb-[40px]'>
                 What I Use!
               </h2>
@@ -129,6 +129,12 @@ const Home = () => {
                         </div>
                       </div>
               </div>
+              <div className='flex items-center justify-center mb-4 mt-4'>
+                <Link href="/projects">
+                  <p className="text-white"><span>[</span><span className='hover:text-retroOrange'>All Projects</span><span>]</span></p>
+                </Link>
+              </div>
+
           </div>
   </div>
 
