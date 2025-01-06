@@ -10,7 +10,7 @@ function Footer() {
           <a href="https://github.com/Muhammed-Harshad-V" target="_blank" rel="noopener noreferrer">
             <Image src="/githubIcon.png" alt="GitHub" width={30} height={30} className="rounded-full" />
           </a>
-          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/muhammed-harshad-v-186b93344/" target="_blank" rel="noopener noreferrer">
             <Image src="/linkedinIcon.png" alt="LinkedIn" width={35} height={35} className="" />
           </a>
         </div>

@@ -30,7 +30,7 @@ export default {
   			retroBrown: '#8B4513',
   			retroGrey: '#696969',
   			retroPurple: '#9370DB',
-  			retroMint: '#98FF98',
+  			retroOrangeDark: '#FF4500',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

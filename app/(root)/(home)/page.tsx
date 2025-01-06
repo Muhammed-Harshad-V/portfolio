@@ -33,9 +33,7 @@ const Home = () => {
                 </p>
 
                 <p className="sm:text-[12px] lg:text-base text-retroWhite">
-                  <span>I'm always eager to learn new technologies</span>
-                  <span> and work on exciting projects.</span> <br />
-                  <span> Let's collaborate!</span>
+                  <Link href="/contact"><span className='text-retroOrange'> Let's collaborate!</span></Link>
                 </p>
 
             </div>
@@ -129,9 +127,12 @@ const Home = () => {
                         </div>
                       </div>
               </div>
-              <div className='flex items-center justify-center mb-4 mt-4'>
+              <div className='flex flex-col items-center justify-center mb-4 mt-4 text-sm'>
                 <Link href="/projects">
-                  <p className="text-white"><span>[</span><span className='hover:text-retroOrange'>All Projects</span><span>]</span></p>
+                  <p className="text-white mb-3"><span>[</span><span className='hover:text-retroOrange'>All Projects</span><span>]</span></p>
+                </Link>
+                <Link href="/contact">
+                  <p className="text-white"><span>[</span><span className='hover:text-retroOrange'>Contact Me</span><span>]</span></p>
                 </Link>
               </div>
 
