@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
               </div>
                   {/* My Journey Section */}
-                    <div className="grid flex-col">
+                <div className="grid flex-col">
                       <h2 className='text-retroOrange sm:text-[20px] lg:text-[25px] font-bold sm:ml-[30px] sm:mt-[30px] md:ml-[40px] lg:ml-[60px] lg:mt-[40px] xl:mt-[50px] mb-[40px]'>
                         My Journey!
                       </h2>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Contact = () => {
   return (
 
-      <div className="flex flex-col items-center justify-center bg-black font-mono p-5 h-[90svh]">
+      <div className="flex flex-col items-center justify-center bg-black font-mono p-5 min-h-[90svh]">
       <div className="font-mono sm:p-5 lg:p-8 rounded-[30px] bg-[#000000] z-20 flex items-center justify-center flex-col text-white mt-10">
           <h1 className="sm:text-3xl xl:text-4xl font-bold mb-4">
             Contact Me
