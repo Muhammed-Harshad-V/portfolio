@@ -13,7 +13,7 @@ const Home = () => {
             <div className="font-mono sm:p-5 lg:p-8 xl:p-10 rounded-[30px] bg-[#000000] z-20 flex items-center justify-center flex-col">
                 <h1 className="sm:text-3xl xl:text-4xl font-bold mb-4 text-retroWhite">
                   <span>Hello,</span>
-                  <span> I'm </span>
+                  <span> I&apos;m </span>
                   <span className="text-retroOrange">Harshad!</span>
                 </h1>
 
@@ -33,7 +33,7 @@ const Home = () => {
                 </p>
 
                 <p className="sm:text-[12px] lg:text-base text-retroWhite">
-                  <Link href="/contact"><span className='text-retroOrange'> Let's collaborate!</span></Link>
+                  <Link href="/contact"><span className='text-retroOrange'> Let&apos;s collaborate!</span></Link>
                 </p>
 
             </div>

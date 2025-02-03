@@ -9,7 +9,7 @@ const Contact = () => {
   const [buttonText, setButtonText] = useState("Send Message");
   const [buttonColor, setButtonColor] = useState("bg-retroOrange");
 
-  const handleSendEmail = async (e) => {
+  const handleSendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setButtonText("Loading...");
@@ -44,19 +44,24 @@ const Contact = () => {
     }
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
-      handleSendEmail(e);
+      
+      // Manually trigger form submission
+      if (form.current) {
+        form.current.requestSubmit();
+      }
     }
   };
+  
 
   return (
     <div className="flex flex-col items-center justify-center bg-black font-mono p-5 min-h-[90svh]">
       <div className="font-mono sm:p-5 lg:p-8 rounded-[30px] bg-[#000000] z-20 flex items-center justify-center flex-col text-white mt-10">
         <h1 className="sm:text-3xl xl:text-4xl font-bold mb-4">Contact Me</h1>
         <h2 className="sm:text-md md:text-xl xl:text-2xl font-semibold mb-2 text-center">
-          I'd love to hear from you!
+          I&apos;d love to hear from you!
         </h2>
         <p className="sm:text-sm lg:text-lg mb-4 text-center">
           If you have any questions, ideas, or just want to say hi, feel free to reach out!
