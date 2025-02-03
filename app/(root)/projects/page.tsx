@@ -1,24 +1,20 @@
 import React from 'react';
-import Image from 'next/image'; // Assuming you are using Next.js for image optimization
+
 
 const MyPage = () => {
   // Dummy data for projects
   const projects = [
     {
-      title: 'Oldest Project',
-      description: 'This project was my first full endeavor in coding, where I cloned a website template using HTML and CSS. It taught me valuable lessons about web development and sparked my passion for creating intuitive user experiences.',
-      technologies: 'HTML, CSS',
-      status: 'Not completed',
-      githubLink: 'https://github.com/yourusername/your-repo',
-      liveLink: 'https://yourwebsite.com',
+      title: 'Echo Chatter (side porject)',
+      description: 'Developed a real-time chat application using WebSockets, enabling instant messaging with bidirectional communication. Built with Node.js, Express, and React, featuring user authentication, and a responsive UI. Designed for scalability with event-driven updates, ensuring a seamless and engaging chat experience.',
+      githubLink: 'https://github.com/Muhammed-Harshad-V/EchoChatter',
+      liveLink: 'https://echochatter.onrender.com',
     },
     {
-      title: 'Newest Project',
-      description: 'A brief description of your newest project goes here. Highlight the features, technologies used, and what you learned from it.',
-      technologies: 'React, Node.js, MongoDB',
-      status: 'Completed',
-      githubLink: 'https://github.com/yourusername/your-repo',
-      liveLink: 'https://yourwebsite.com',
+      title: 'HR Management- Admin Panel',
+      description: 'Developed a scalable HR Management Admin Panel using microservices architecture, integrating Express.js for backend services and React for an intuitive frontend. Streamlined employee onboarding, attendance tracking, payroll processing, and performance evaluation with RESTful APIs, role-based access, and real-time data visualization.',
+      githubLink: 'https://github.com/Muhammed-Harshad-V/Hr-management',
+      liveLink: 'https://h-yq1e.onrender.com/dashboard',
     },
   ];
 
@@ -41,20 +37,17 @@ const MyPage = () => {
                 <div>
                     <h3 className="text-retroOrange font-bold text-lg mb-2">{project.title}</h3>
                     <p className="text-retroWhite text-sm mb-2">{project.description}</p>
-                    <div className="text-white text-sm mb-3">
-                    <strong>Technologies Used:</strong> <span className='text-sky-400'>{project.technologies}</span>
-                    </div>
                 </div>
 
-                <div className="flex flex-col mb-8 mx-auto">
+                <div className="flex flex-col mb-8 items-center">
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                     <p className="text-white text-sm mb-1">
-                    <span>[</span><span className='hover:text-blue-500'>git</span><span>]</span>
+                    <span>[</span><span className='hover:text-blue-500'>github</span><span>]</span>
                     </p>
                     </a>
                     <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
                     <p className="text-white text-sm mb-1">
-                    <span>[</span><span className='hover:text-blue-500'>web</span><span>]</span>
+                    <span>[</span><span className='hover:text-blue-500'>website</span><span>]</span>
                     </p>
                     </a>
                 </div>
