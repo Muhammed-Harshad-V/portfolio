@@ -3,8 +3,8 @@ import './globals.css'; // Import global styles
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: 'harshad',
-  description: 'portfolio websiite of harshad',
+  title: 'Harshad',
+  description: 'portfolio websiite of Harshad',
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
